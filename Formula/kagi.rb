@@ -7,24 +7,24 @@ class Kagi < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Microck/kagi-cli/releases/download/v0.3.1/kagi-v0.3.1-aarch64-apple-darwin.tar.gz"
-      sha256 "f26d0e9834a861a860513561ed139f5c8e5221eef92d67b66361a091889076fe"
+      sha256 "ecb29df1eb36f573efee593cf43cf438963d91237207aafe8448e82a5a15779f"
     end
 
     if Hardware::CPU.intel?
       url "https://github.com/Microck/kagi-cli/releases/download/v0.3.1/kagi-v0.3.1-x86_64-apple-darwin.tar.gz"
-      sha256 "014c8a03f1d5add4c1cb525901097661cf684d37d393281790b17af86e1410b1"
+      sha256 "c0710d48b3da7ca7ab7bbabc77c0e2b94b3fb4697eed3e8cb2b293d28c928427"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Microck/kagi-cli/releases/download/v0.3.1/kagi-v0.3.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b6c5982561497bb8e1f354b6f2380b861c4ff83b86538fefad470e37a101e8e6"
+      sha256 "bd005b54e5337225cfa0645a546b9d629854d03cb02eee67be0f516b67680404"
     end
 
     if Hardware::CPU.intel?
       url "https://github.com/Microck/kagi-cli/releases/download/v0.3.1/kagi-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "529456e6d9bb952e0aa0c59cee304d9731d7095eba9874a6ff2c50ac0ee59247"
+      sha256 "b52d55739cb0001a60101fcfc21a8bf7476bc9f05ba52d9801d1039a6b0e3e5c"
     end
   end
 
