@@ -1,6 +1,6 @@
 # homebrew-kagi
 
-Homebrew tap for the `kagi` CLI.
+Homebrew tap for the [`kagi`](https://github.com/Microck/kagi-cli) CLI — an agent-native Rust CLI for Kagi subscribers with JSON-first output.
 
 ## Install
 
@@ -14,4 +14,11 @@ brew install kagi
 ```bash
 brew update
 brew upgrade kagi
+```
+
+## Uninstall
+
+```bash
+brew uninstall kagi
+brew untap Microck/kagi
 ```
