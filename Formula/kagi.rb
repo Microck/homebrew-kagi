@@ -1,30 +1,30 @@
 class Kagi < Formula
   desc "Agent-native Rust CLI for Kagi subscribers with JSON-first output"
   homepage "https://github.com/Microck/kagi-cli"
-  version "0.4.7"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Microck/kagi-cli/releases/download/v0.4.7/kagi-v0.4.7-aarch64-apple-darwin.tar.gz"
-      sha256 "a0db2e97e92a954399ebe56c0d251d561c71ec60d99f2d136a03b39f423fbe0d"
+      url "https://github.com/Microck/kagi-cli/releases/download/v0.5.0/kagi-v0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "c191dd722279407bf9a7b25ff975b8c2e2b9a600a1b94b00ca0a1c7d221ccfe0"
     end
 
     if Hardware::CPU.intel?
-      url "https://github.com/Microck/kagi-cli/releases/download/v0.4.7/kagi-v0.4.7-x86_64-apple-darwin.tar.gz"
-      sha256 "f28b581c6017379cf340578d30c482b9d91df516466d1150cbe32314cc979954"
+      url "https://github.com/Microck/kagi-cli/releases/download/v0.5.0/kagi-v0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "54af0b4358e74ab8af1fdbcb3dd95b78c4dc41abd92b06b297464eaf5f080eb5"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Microck/kagi-cli/releases/download/v0.4.7/kagi-v0.4.7-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0526a6e45c17bb25a9bc1cedd303bf28d5d7cba7b8fdca7df038fa5eeea25fb6"
+      url "https://github.com/Microck/kagi-cli/releases/download/v0.5.0/kagi-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "36abab019294a7f476d3c50b930f26a452837ab19120d7a9201b10589a7e14f1"
     end
 
     if Hardware::CPU.intel?
-      url "https://github.com/Microck/kagi-cli/releases/download/v0.4.7/kagi-v0.4.7-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9096ceee9462111ad43a225870cd49fdc25927ed3ee49e5fd3d305c2e82a7b14"
+      url "https://github.com/Microck/kagi-cli/releases/download/v0.5.0/kagi-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c90847a9645ad157e98428a8476cdc87d94bc7b27e8d796bf4a02664dba35a67"
     end
   end
 
