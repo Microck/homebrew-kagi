@@ -1,30 +1,30 @@
 class Kagi < Formula
   desc "Agent-native Rust CLI for Kagi subscribers with JSON-first output"
   homepage "https://github.com/Microck/kagi-cli"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Microck/kagi-cli/releases/download/v0.9.0/kagi-v0.9.0-aarch64-apple-darwin.tar.gz"
-      sha256 "d5d4daf70a730d7d98f340927c6cf12e109c4e910564469593bef50d12f553f5"
+      url "https://github.com/Microck/kagi-cli/releases/download/v0.9.1/kagi-v0.9.1-aarch64-apple-darwin.tar.gz"
+      sha256 "0dabc387a393ba3e0ad57316d3936e5e112d9849ef2f6af081ab422282fdf60d"
     end
 
     if Hardware::CPU.intel?
-      url "https://github.com/Microck/kagi-cli/releases/download/v0.9.0/kagi-v0.9.0-x86_64-apple-darwin.tar.gz"
-      sha256 "f7d7ecb04d13bdf6be33cb4f1a88a50d2139e8e1123d8f388c4d89c9a9d9b966"
+      url "https://github.com/Microck/kagi-cli/releases/download/v0.9.1/kagi-v0.9.1-x86_64-apple-darwin.tar.gz"
+      sha256 "1fb91c3d351022fb05f6af728625dbadff44464bf269abd8de57f25c48c6d9ba"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Microck/kagi-cli/releases/download/v0.9.0/kagi-v0.9.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a22fde549b32402e062bb46aa43ce968ec7d4432ff7a1ee37e4d45ce739b1cff"
+      url "https://github.com/Microck/kagi-cli/releases/download/v0.9.1/kagi-v0.9.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bcc2deeee300270575a68299ea2893dfaef94c186a0912748e8ef4a2ddd83caa"
     end
 
     if Hardware::CPU.intel?
-      url "https://github.com/Microck/kagi-cli/releases/download/v0.9.0/kagi-v0.9.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "09bd758be6f374384aa73c1d6d22e92bcfced40537d06ea832dfb80a659dea02"
+      url "https://github.com/Microck/kagi-cli/releases/download/v0.9.1/kagi-v0.9.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "403518d089e614015a4686f3bfcbc5ff3a5aeccf2cefa0855a5bb164ac6581ab"
     end
   end
 
@@ -33,6 +33,6 @@ class Kagi < Formula
   end
 
   test do
-    assert_match "Usage: kagi <COMMAND>", shell_output("#{bin}/kagi --help")
+    assert_match "Usage: kagi [OPTIONS] [COMMAND]", shell_output("#{bin}/kagi --help")
   end
 end
